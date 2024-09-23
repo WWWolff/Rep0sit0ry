@@ -1,0 +1,45 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{fontspec}
+\usepackage{hyperref} % Aggiunto per gestire URL ed email
+\usepackage{mathpazo}
+
+% Imposta Gill Sans come font principale
+\setmainfont{TeX Gyre Heros}
+
+\pagestyle{empty}
+\setlength\parindent{0pt}
+\usepackage[paperwidth=3.5in, 
+    paperheight=2in,
+    left=0.2in,
+    right=0.2in,
+    top=0.1in,
+    bottom=0.05in]{geometry}
+
+\begin{document}
+% Inserisci il logo
+\centering \includegraphics[width=.25\linewidth]{logo}\\[5pt]
+
+% Nome e titolo centrati
+\parbox{2in}{\Large \centering Daniel Wolff\\[1pt]
+\normalsize PhD Student}
+
+\vfill
+
+% Informazioni di contatto in due colonne
+\raggedright
+\begin{multicols}{2}
+\href{http://daniel.wolff}{http://daniel.wolff}\\
+\href{mailto:daniel.wolff.etu@univ-lille.fr}{daniel.wolff.etu@univ-lille.fr}
+
+\columnbreak
+\raggedleft
+@WWWolff\\
++39 33 37 28 87 42
+\end{multicols}
+
+\end{document}
